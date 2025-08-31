@@ -24,6 +24,11 @@ This project is a comprehensive finance data visualization and natural language 
 - Streamlit for frontend dashboard
 - Caching for query performance and historical data exploration
 
+## Live Demo
+
+Try the application live at:  
+[https://yieldcurvee.streamlit.app](https://yieldcurvee.streamlit.app)
+
 ---
 
 This system offers a powerful tool for analysts and investors to monitor economic signals and market conditions in an integrated and visual manner, improving decision-making with data-driven insights.
