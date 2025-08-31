@@ -1,39 +1,41 @@
 # Financial Statement Analysis Dashboard Requirements
 
 # Core Streamlit and Web Framework
-streamlit>=1.28.0
+streamlit>=1.28.0           # For the dashboard UI
 streamlit-extras>=0.3.0
 
 # Data Processing and Analysis
-pandas>=2.0.0
-numpy>=1.24.0
+pandas>=2.0.0               # Data manipulation and analysis
+numpy>=1.24.0               # Numerical operations
 scipy>=1.10.0
 
 # Data Visualization
-plotly>=5.15.0
+plotly>=5.15.0              # Interactive charts and plots
 altair>=5.0.0
 
 # API and Data Fetching
-requests>=2.31.0
+requests>=2.31.0            # HTTP requests (used for API calls)
 urllib3>=2.0.0
+aiohttp>=3.8.0              # Async HTTP requests (for FRED API and news fetchers)
 
 # Data Validation and Processing
 pydantic>=2.0.0
 jsonschema>=4.17.0
 
 # Financial Data Processing
-yfinance>=0.2.20  # Optional: for market data
+yfinance>=0.2.20            # Optional: for market data
 python-dateutil>=2.8.2
 
 # Caching and Performance
-diskcache>=5.6.0  # Alternative to built-in caching
+diskcache>=5.6.0            # Alternative to built-in caching
+schedule>=1.2.0             # Background task scheduling
 
 # Export and Reporting
-reportlab>=4.0.0  # For PDF generation
-kaleido>=0.2.1   # For Plotly static image export
-Pillow>=9.0.0    # Image handling for PDF embedding
-openpyxl>=3.1.0   # For Excel export
-jinja2>=3.1.0     # For template rendering
+reportlab>=4.0.0            # For PDF generation
+kaleido>=0.2.1              # For Plotly static image export
+Pillow>=9.0.0               # Image handling for PDF embedding
+openpyxl>=3.1.0             # For Excel export
+jinja2>=3.1.0               # For template rendering
 
 # Logging and Monitoring
 structlog>=23.0.0
@@ -52,7 +54,7 @@ mypy>=1.5.0
 typing-extensions>=4.7.0
 
 # Mathematical Operations
-sympy>=1.12.0  # For complex financial calculations
+sympy>=1.12.0               # For complex financial calculations
 
 # Configuration Management
 python-decouple>=3.8.0
@@ -62,11 +64,18 @@ pyyaml>=6.0.0
 tenacity>=8.2.0
 
 # Data Formats
-lxml>=4.9.0      # For XML/XBRL parsing if needed
-beautifulsoup4>=4.12.0  # For HTML parsing
+lxml>=4.9.0                 # For XML/XBRL parsing if needed
+beautifulsoup4>=4.12.0      # For HTML parsing
 
 # Optional: Machine Learning for anomaly detection
 scikit-learn>=1.3.0
 
 # Optional: Advanced statistical analysis
 statsmodels>=0.14.0
+
+# NLP Sentiment Analysis
+textblob>=0.18.0            # Sentiment analysis (NLP)
+
+# REST API Backend
+fastapi>=0.110.0            # Optional: REST API backend
+uvicorn>=0.29.0             # Optional: ASGI
